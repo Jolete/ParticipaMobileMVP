@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jarenas.participamobile" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".presentation.view.activities.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.view.activities.GridViewActivity" >
+        </activity>
+        <activity android:name=".presentation.view.activities.GridItemActivity" >
+        </activity>
+        <activity android:name=".presentation.view.activities.CameraCaptureActivity" >
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.view.activities.CouncilListActivity" >
+        </activity>
+        <activity android:name=".presentation.view.activities.LanguageListActivity" >
+        </activity>
+        <activity android:name=".presentation.view.activities.SettingsListActivity" >
+        </activity>
+        <activity android:name=".presentation.view.activities.ProductListActivity" >
+        </activity>
+    </application>
+
+</manifest>
