@@ -7,16 +7,15 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.jarenas.participamobile.R;
 
-
-public class LanguageListActivity extends AppCompatActivity {
+public class CategoryListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_languages);
+        setContentView(R.layout.activity_product_list);
     }
 
     public static Intent getCallingIntent(Context context) {
-        return new Intent(context, LanguageListActivity.class);
+        return new Intent(context, CategoryListActivity.class);
     }
 }

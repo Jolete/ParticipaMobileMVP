@@ -3,6 +3,7 @@ package com.example.jarenas.participamobile.presentation.navigation;
 import android.content.Context;
 import android.content.Intent;
 
+import com.example.jarenas.participamobile.presentation.view.activities.CategoryListActivity;
 import com.example.jarenas.participamobile.presentation.view.activities.CouncilListActivity;
 import com.example.jarenas.participamobile.presentation.view.activities.LanguageListActivity;
 import com.example.jarenas.participamobile.presentation.view.activities.ProductDetailsActivity;
@@ -19,6 +20,18 @@ import com.example.jarenas.participamobile.presentation.view.activities.Settings
 public class Navigator {
 
     public Navigator () {}
+
+    /**
+     * Goes to the notification category list screen.
+     *
+     * @param context A Context needed to open the destiny activity.
+     */
+    public void navigateToCategoryList(Context context) {
+        if (context != null) {
+            Intent intentToLaunch = CategoryListActivity.getCallingIntent(context);
+            context.startActivity(intentToLaunch);
+        }
+    }
 
     /**
      * Goes to the council list screen.

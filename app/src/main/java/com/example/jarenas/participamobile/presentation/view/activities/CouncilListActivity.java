@@ -7,6 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.jarenas.participamobile.R;
 
+/**
+ * Created by jarenas on 24/11/2015.
+ *
+ * Class used to list the councils.
+ */
+
 public class CouncilListActivity extends AppCompatActivity {
 
     @Override
